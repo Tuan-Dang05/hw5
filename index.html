@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ProductDetails {
+        display: none;
+    }
+
+    .Product img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #aaa;
+    }
+
+    .ProductName {
+        font-weight: bold;
+    }
+
+    .ProductID {
+        font-style: italic;
+    }
+
+    .ProductID:before {
+        content: " - ";
+    }
+
+    .Product {
+        text-align: center;
+        width: 150px;
+        margin: 0px 20px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .Product:hover .ProductDetails {
+        display: block;
+    }
+</style>
+<body>
+    <div>
+        <div class="Product">
+            <img src="./image/white-cloud.png" />
+            <div class="ProductDetails">
+                <span class="ProductName">Viet Anh</span>
+                <span class="ProductID">23070124</span>
+            </div>
+        </div>
+        <div class="Product">
+            <img src="./image/istockphoto.jpg" />
+            <div class="ProductDetails">
+                <span class="ProductName">Long Thanh</span>
+                <span class="ProductID">23070179</span>
+            </div>
+        </div>
+        <div class="Product">
+            <img src="./image/Athome.jpg" />
+            <div class="ProductDetails">
+                <span class="ProductName">Minh Tuan</span>
+                <span class="ProductID">23070979</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
